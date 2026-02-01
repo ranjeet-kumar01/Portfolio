@@ -1,0 +1,124 @@
+.about-section {
+    padding: 120px 0;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 6rem;
+    align-items: flex-start;
+}
+
+.about-services {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+/* Red accent line from reference */
+.about-services::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--accent-color);
+    opacity: 0.5;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: var(--transition);
+    position: relative;
+}
+
+.service-item:hover {
+    background: var(--bg-secondary);
+    transform: translateX(10px);
+}
+
+.service-item::before {
+    content: '';
+    position: absolute;
+    left: -2.1rem;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+
+.service-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent-color);
+}
+
+.service-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.service-item h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.section-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.about-text {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+    max-width: 600px;
+}
+
+.about-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-num {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--accent-color);
+    font-family: var(--font-heading);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+}
