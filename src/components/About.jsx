@@ -57,11 +57,11 @@ const About = () => {
                     </p>
                     <div className="about-stats">
                         <div className="stat">
-                            <span className="stat-num">04+</span>
+                            <span className="stat-num">01+</span>
                             <span className="stat-label">Years Experience</span>
                         </div>
                         <div className="stat">
-                            <span className="stat-num">50+</span>
+                            <span className="stat-num">5+</span>
                             <span className="stat-label">Projects Completed</span>
                         </div>
                     </div>

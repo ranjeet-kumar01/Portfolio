@@ -58,7 +58,10 @@ const Hero = () => {
 
                     <h1 className="hero-title-role"> <span>{typedText}</span> </h1>
                     <div className="hero-btns">
-                        <button className="btn btn-primary">Got a project?</button>
+                        <a href="/pdf/RANJEET_EUROPASS.pdf" target="_blank">
+
+                        <button className="btn btn-primary">EuroPass CV</button>
+                        </a>
                         <a href="/pdf/FULL_STACK_DEV.pdf" target="_blank" rel="noopener noreferrer">
                             <button className="btn btn-outline">My resume</button>
                         </a>
@@ -70,8 +73,8 @@ const Hero = () => {
                         <div className="glow-circle" ref={circleRef}></div>
                         <div className="profile-img-wrapper" ref={imgRef}>
                             <img
-                                src='images/bg.jpeg'
-                                alt="Jensen Omega"
+                                src='images/profile.png'
+                                alt="Ranjeet Kumar"
                                 className="profile-img"
                             />
                         </div>
